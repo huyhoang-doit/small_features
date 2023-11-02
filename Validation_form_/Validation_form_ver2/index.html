@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <title>SIGN UP FORM</title>
+</head>
+
+<body>
+    <div class="main">
+        <form action="" method="POST" class="form" id="form-login">
+            <h3 class="heading">LOG IN</h3>
+            <p class="desc">Please enter your account information</p>
+            <div class="spacer"></div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" rule = "required|email" type="text" placeholder="EX: email@domain.com" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input id="password" name="password" rule = "required|min:6" type="password" placeholder="Enter your password" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+
+            <button class="form-submit">LOG IN</button>
+
+        </form>
+    </div>
+    <script src = "javaScript.js"></script>
+    <script>
+        Validator('#form-login')
+    </script>
+</body>
+
+</html>
